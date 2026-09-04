@@ -10,7 +10,7 @@ Blizzard is a 5th level water that replaces Remove Obstacle. Damage is 30/30/60/
 3. Start a new game and have fun
 
 ## Compatibility
-Compatible with all Mods except others that change remove ovstacles spell.
+Compatible with all Mods except others that change Remove Obstacles spell.
 Keep in mind if you use death chamber option, the lich will cast Blizard instead of Remove Obstacles, but the script still works.
 
 ## About
