@@ -2,7 +2,7 @@
 
 
 ## Description
-Blizzard is a 5th level water that replaces Remove Obstacle. Damage is 30/30/60/120 + power X20, in inferno AOE and slows for 2/2/4/4.
+Blizzard is a 5th level water that replaces Remove Obstacle. Deals 30/30/60/120 + power X20 damage in inferno AOE, and slows for 2/2/4/4.
 
 ## Installation
 1. Download via Mod Browser or Extract the mod files to your Heroes III ERA/Mods/ installation directory
