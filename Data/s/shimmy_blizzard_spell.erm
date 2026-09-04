@@ -1,0 +1,30 @@
+ZVSE2
+
+!#DC(SHIMMY_SPELL_BLIZZARD) = (SPELL_REMOVE_OBSTACLE);
+
+!?FU(shimmy_BlizzardSpellInitiazliation);
+
+  !#VA(blizzardValues[4]:y);
+  !#VA(blizzardSpeedDecreasing[4]:y);
+  !#VA(blizzardCosts[4]:y);
+
+  !!VR(blizzardValues[0]):C30/30/60/120;
+  !!VR(blizzardSpeedDecreasing[0]):C2/2/4/4;
+  !!VR(blizzardCosts[0]):C25/20/20/20;
+
+  !!SN:T^shimmy.spell.%(SHIMMY_SPELL_BLIZZARD).name.full^/?(description:z) H^spell^/(SHIMMY_SPELL_BLIZZARD)/(SPELL_TEXT_NAME)/(description:z);
+  !!SN:T^shimmy.spell.%(SHIMMY_SPELL_BLIZZARD).name.short^/?(description:z) H^spell^/(SHIMMY_SPELL_BLIZZARD)/(SPELL_TEXT_SHORT_NAME)/(description:z);
+  !!re i/(SKILL_NOT_LEARNED)/(SKILL_EXPERT);
+
+    !!SS(SHIMMY_SPELL_BLIZZARD):Ei/(blizzardValues[i]);
+    !!SS(SHIMMY_SPELL_BLIZZARD):Ci/(blizzardCosts[i]);
+    !!VRi^shimmy_blizzard_spell_speed_decreasing_%i^:S(blizzardSpeedDecreasing[i]);
+
+    !!VR(textType:y):Si +(SPELL_TEXT_DESCR);
+    !!SN:T^shimmy.spell.%(SHIMMY_SPELL_BLIZZARD).description.%i^/?(description:z) H^spell^/(SHIMMY_SPELL_BLIZZARD)/(textType)/(description:z); [set new description]
+  !!en;
+
+  !!SS(SHIMMY_SPELL_BLIZZARD):P20 L5; S(SPELL_SCHOOL_WATER); [set same as inferno flags to cast as area spell]
+
+!#FU(shimmy_BlizzardSpellInitiazliation):P;
+

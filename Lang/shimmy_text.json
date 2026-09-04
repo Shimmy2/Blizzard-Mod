@@ -1,0 +1,18 @@
+{
+    "shimmy": {
+        "spell": {
+            "64": {
+                "description": {
+                    "0": "{Blizzard}\n\nCauses a huge blizzard that damages and slows a wide range of enemies. The slow is permanent and cannot be dispelled.\n",
+                    "1": "{Basic Blizzard}\n\nCauses a huge blizzard that damages and slows a wide range of enemies. The slow is permanent and cannot be dispelled.\n",
+                    "2": "{Advanced Blizzard}\n\nCauses a huge blizzard that damages and slows a wide range of enemies. The slow is permanent and cannot be dispelled.\n\nDamage inflicted is 30 points more than basic Blizzard.\n",
+                    "3": "{Expert Blizzard}\n\nCauses a huge blizzard that damages and slows a wide range of enemies. The slow is permanent and cannot be dispelled.\n\nDamage inflicted is 90 points more than basic Blizzard.\n",
+                },
+                "name": {
+                    "short": "Blizzard",
+                    "full": "Blizzard"
+                }
+            }
+        }
+    }
+}
